@@ -31,7 +31,7 @@ export default function Page() {
         <p className="hero-description">
           Experience powerful coding environments with our advanced editor. Write, test, and build amazing projects in one place.
         </p>
-        <button className="hero-button">Start Coding</button>
+        < span  className="hero-button">.__Explode__.</ span >
 
         {/* Feature Cards */}
         <div className="feature-cards">

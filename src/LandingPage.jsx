@@ -1,5 +1,8 @@
 import { useState } from 'react';
-import './Page.css'; // Import the custom CSS
+import './LandingPage.css'; // Import the custom CSS
+
+
+
 
 export default function Page() {
   return (
@@ -11,15 +14,13 @@ export default function Page() {
       {/* Background gradients */}
       <div className="background-gradient" />
       <div className="radial-gradient" />
-      
+
+
+
+       <div  className='main-content'>
       {/* Header */}
       <header className="header">
-        <div className="header-content">
-          <h1 className="title">
-            <span className="subtitle">&lt;/&gt;</span>
-            CodeLab
-          </h1>
-        </div>
+              &lt;/&gt; Code_lab
       </header>
 
       {/* Hero Section */}
@@ -72,8 +73,10 @@ export default function Page() {
               See your code come to life with live preview functionality.
             </p>
           </div>
+          
         </div>
       </main>
+      </div>
     </div>
   );
 }

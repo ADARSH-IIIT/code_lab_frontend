@@ -1,3 +1,11 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'EXO 2' , ROBOTO;
+}
+
+
+
 /* Base styles */
 .page-container {
     height: 100vh;
@@ -109,36 +117,46 @@
   
   /* Hero Section */
   .hero {
-    text-align: center;
-    padding-top: 5rem;
-    padding-bottom: 8rem;
+  
+
     position: relative;
     z-index: 10;
     height: 92vh;
     width: 100vw;
     /* background-color: yellow; */
+
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     gap: 3%;
   }
   
   .hero-title {
-    font-size: 3rem;
+
+    margin-top: 5%;
+    font-size: 5rem;
     font-weight: bold;
-    max-width: 64rem;
-    margin-left: auto;
-    margin-right: auto;
-    line-height: 1.2;
+   
+ 
+   
+
+    /* background-color: red; */
+    /* flex: 0.1; */
   }
   
   .hero-description {
-    margin-top: 1.5rem;
+   
     font-size: 1.125rem;
     color: #b4b4b4;
     max-width: 32rem;
-    margin-left: auto;
-    margin-right: auto;
+    text-align: center;
+
+    /* background-color: pink; */
   }
   
   .hero-button {
-    margin-top: 2.5rem;
+  
     background: linear-gradient(to right, #3182f6, #7f4cfc);
     color: white;
     font-size: 1.125rem;
@@ -182,18 +200,22 @@
   
   /* Feature Cards */
   .feature-cards {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1.5rem;
-    margin-top: 8rem;
+   
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
   }
   
   .feature-card {
-    background-color: rgba(18, 19, 31, 0.5);
-    border: 1px solid rgba(31, 41, 55, 0.5);
+    background-color: rgba(18, 19, 31, 0.205);
+    border: 1px solid rgba(35, 43, 56, 0.562);
     backdrop-filter: blur(10px);
     padding: 1.5rem;
     text-align: center;
+    border-radius: 20px;
+    flex: 0.25;
   }
   
   .icon-container {
@@ -213,6 +235,7 @@
     width: 1.5rem;
     height: 1.5rem;
     color: #3182f6;
+    
   }
   
   .feature-title {

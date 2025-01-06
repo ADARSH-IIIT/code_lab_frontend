@@ -8,7 +8,7 @@
 
 /* Base styles */
 .page-container {
-    height: 100vh;
+  height: 100vh;
     background-color: #0a0b14;
     color: white;
     overflow: hidden;
@@ -111,6 +111,7 @@
       height: 95vh;
     }
 
+   
   
   }
  
@@ -147,7 +148,7 @@
   
   .hero-description {
    
-    font-size: 1.125rem;
+    font-size: 1.5rem;
     color: #b4b4b4;
     max-width: 32rem;
     text-align: center;
@@ -159,7 +160,7 @@
   
     background: linear-gradient(to right, #3182f6, #7f4cfc);
     color: white;
-    font-size: 1.125rem;
+    font-size: 1.3rem;
     padding: .6rem 1.5rem;
     border-radius: 1rem;
     border: none;
@@ -192,11 +193,18 @@
       padding: 0.6rem 0.9rem;
       font-size: 1rem;
     }
-    
+    .hero-title{
+      /* color: red; */
+  
+      font-size: 40px;
+    }
     
 
     
   }
+
+
+
   
   /* Feature Cards */
   .feature-cards {
@@ -206,17 +214,41 @@
     justify-content: center;
     align-items: center;
     gap: 5%;
+    height: 25vh;
+    width: 100vw;
   }
   
   .feature-card {
     background-color: rgba(18, 19, 31, 0.205);
     border: 1px solid rgba(35, 43, 56, 0.562);
     backdrop-filter: blur(10px);
-    padding: 1.5rem;
+    
     text-align: center;
     border-radius: 20px;
-    flex: 0.25;
+    flex: 0.2;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column  ;
+
+    /* padding: 3%; */
   }
+
+
+
+
+  @media screen and ( max-width : 1100px) {
+
+
+    .feature-card{
+     flex: 0.3;
+    
+    }
+       
+     }
+
   
   .icon-container {
     width: 3rem;
@@ -281,3 +313,59 @@
     }
   }
   
+
+
+
+@media screen and (max-width : 400px) {
+
+  .feature-cards{
+   display: none ;
+  }
+  
+}
+
+
+
+
+
+@media screen and (max-width : 995px) {
+
+  .hero-title{
+    font-size: 4rem;
+  }
+  
+}
+
+html{
+
+
+   @media screen and (max-width : 800px) {
+
+    font-size : 12px;
+    
+   }
+
+
+   @media screen and (max-width : 600px) {
+
+    font-size : 10px;
+    
+   }
+
+
+   @media screen and (max-width : 500px) {
+
+    font-size : 8px;
+    
+   }
+   
+
+   @media screen and (max-width : 400px) {
+
+    font-size : 7px;
+    
+   }
+
+
+
+}

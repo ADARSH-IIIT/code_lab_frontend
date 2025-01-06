@@ -5,6 +5,10 @@ import { FiUsers, FiZap } from "react-icons/fi";
 import { FaCode } from "react-icons/fa";
 
 export default function Page() {
+
+
+  
+
   return (
     <div className="page-container">
       {/* Animated background spheres */}
@@ -41,7 +45,7 @@ export default function Page() {
             </div>
             <h3 className="feature-title">Real-time Editing</h3>
             <p className="feature-description">
-              See changes as they happen. Code with perfect synchronization.
+               Code with perfect synchronization.
             </p>
           </div>
 
@@ -51,7 +55,7 @@ export default function Page() {
             </div>
             <h3 className="feature-title">Team Collaboration</h3>
             <p className="feature-description">
-              Work together seamlessly with powerful collaboration tools.
+              Work together seamlessly .
             </p>
           </div>
 
@@ -61,7 +65,7 @@ export default function Page() {
             </div>
             <h3 className="feature-title">Instant Preview</h3>
             <p className="feature-description">
-              See your code come to life with live preview functionality.
+              Live preview functionality.
             </p>
           </div>
           

@@ -1,12 +1,14 @@
 
 import './LandingPage.css'; // Import the custom CSS
 import { FiUsers, FiZap } from "react-icons/fi";
-
 import { FaCode } from "react-icons/fa";
+import { useNavigate } from 'react-router-dom';
 
 export default function Page() {
 
 
+
+  const navigator = useNavigate()
   
 
   return (
@@ -35,7 +37,7 @@ export default function Page() {
         < div  className="hero-description">
           Experience powerful coding environments with your peer.  Build amazing projects in one place.
         </div>
-        < span  className="hero-button">.__Explode__.</ span >
+        < span  className="hero-button"  onClick={()=> navigator('/securitycode') }>.__Explode__.</ span >
 
         {/* Feature Cards */}
         <div className="feature-cards">

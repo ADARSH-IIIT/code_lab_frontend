@@ -1,0 +1,197 @@
+.project-page {
+    height: 100vh;
+    background: radial-gradient(circle, rgba(45,0,93,1) 0%, rgba(25,0,53,1) 50%, rgba(11,0,33,1) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ 
+    width: 100vw;
+  }
+  
+  .content-container {
+    width: 100%;
+    max-width: 450px;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    
+  }
+  
+  .title {
+    color: #ffffff;
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 40px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  .join-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 30px;
+    
+  }
+  
+  .project-input {
+    width: 90%;
+    padding: 15px 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    color: #ffffff;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+  }
+  
+  .project-input:focus {
+    outline: none;
+    border-color: rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.15);
+  }
+  
+  .project-input::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+  }
+  
+  .button {
+    width: 100%;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 12px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .join-button {
+    background: linear-gradient(to right, #093b81, #c457e6);
+    color: white;
+    width: 50%;
+    margin-left: 25% ;
+    outline: none ;
+   
+  }
+
+  .button:focus {
+    outline: none;
+  }
+
+
+  .join-button:active {
+
+
+     width: 30%;
+     margin-left : 35% ;
+    
+   
+  }
+
+  
+  .join-button:hover {
+    background: linear-gradient(135deg, #4338ca 0%, #2563eb 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.5);
+  }
+  
+  .create-button {
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    color: white;
+  }
+  
+  .create-button:hover {
+    border-color: rgba(255, 255, 255, 0.4);
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateY(-2px);
+  }
+
+  .create-button:active{
+      width: 60%;
+      margin-left: 20%;
+  }
+  
+  .divider {
+    position: relative;
+    text-align: center;
+    margin: 30px 0;
+  }
+  
+  .divider::before,
+  .divider::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: calc(50% - 30px);
+    height: 1px;
+    background: rgba(255, 255, 255, 0.2);
+  }
+  
+  .divider::before {
+    left: 0;
+  }
+  
+  .divider::after {
+    right: 0;
+  }
+  
+  .divider span {
+    background: transparent;
+    color: rgba(255, 255, 255, 0.6);
+    padding: 0 15px;
+    font-size: 0.9rem;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .content-container {
+      padding: 30px;
+    }
+  
+    .title {
+      font-size: 2rem;
+      margin-bottom: 30px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .project-page {
+      padding: 15px;
+    }
+  
+    .content-container {
+      padding: 20px;
+    }
+  
+    .title {
+      font-size: 1.8rem;
+      margin-bottom: 25px;
+    }
+  
+    .button {
+      padding: 12px 20px;
+    }
+  }
+
+
+
+
+
+
+
+  @media screen and (max-width : 600px) {
+
+    .content-container{
+        width: 70%;
+    }
+
+    .project-input{
+        width: 80%;
+    }
+    
+  }
